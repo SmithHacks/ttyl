@@ -1,4 +1,6 @@
-
+html,body,center{
+    height: 100%;
+}
 h1{
     font-size: 120px;
     font-family: 'Exo 2', sans-serif;
@@ -14,14 +16,16 @@ h1{
 
 .landing {
     width: 100%;
-    height: 100%;
+    height: 70%;
     color: white;
 
     background: url("../images/car.jpg");
     background-size: 100% ;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 h5 {
     text-align: justify;
 }
+
