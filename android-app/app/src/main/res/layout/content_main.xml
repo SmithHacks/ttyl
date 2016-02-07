@@ -12,24 +12,30 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="me.austinward.ttyl.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TTYL"
-        android:textSize="24sp"
-        android:layout_marginBottom="30dp"/>
+        android:textSize="80sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#d20d7d" />
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:id="@+id/button1"
-        android:text="@string/go_to_map" />
+        android:text="@string/driving" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:text="@string/action_settings"/>
+    <TextView
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start your trip"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp" />
 
 </LinearLayout>
