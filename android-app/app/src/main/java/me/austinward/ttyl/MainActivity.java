@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void textBack() {
         if(driving) {
-            String messageToSend = "I am driving, sorry";
+            String messageToSend = "I am driving, ttyl!";
             String number = "+16319013544";
 
             SmsManager.getDefault().sendTextMessage(number, null, messageToSend, null,null);

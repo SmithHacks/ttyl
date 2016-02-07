@@ -50,7 +50,7 @@ public class IncomingSms extends BroadcastReceiver {
                     String messageToSend;
 
                     if(test.driving) {
-                        messageToSend = "I am driving, sorry";
+                        messageToSend = "I am driving, ttyl!";
                     }
                     else {
                         messageToSend = "Hello";
