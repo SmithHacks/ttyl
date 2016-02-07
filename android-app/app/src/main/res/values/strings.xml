@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TTYL</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="go_to_map">Go to Map</string>
+    <string name="title_activity_sms_receiver">SmsReceiver</string>
+</resources>
