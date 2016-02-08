@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">TTYL</string>
+    <string name="app_name">ttyl</string>
     <!--<string name="action_settings">Settings</string>-->
     <!--<string name="title_activity_maps">Map</string>-->
-    <string name="driving">Toggle Driving OnOff</string>
+    <string name="driving">Toggle Driving On/Off</string>
     <string name="title_activity_sms_receiver">SmsReceiver</string>
 </resources>

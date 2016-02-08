@@ -1,6 +1,5 @@
 package me.austinward.ttyl;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,12 +10,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button button1;
     static Boolean driving = false;
+    static Boolean responded = false;
 
 
     @Override
@@ -88,16 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             driving = true;
         }
 
-        Context context = getApplicationContext();
-        CharSequence text = "You are not driving";
         if (driving) {
-            text = "You are driving";
+            responded = false;
         }
 
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
 
         TextView drivingDisplay=(TextView)findViewById(R.id.textView);
         if(driving) {

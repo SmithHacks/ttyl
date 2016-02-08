@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.util.Log;
-import android.widget.Toast;
 
 /**
  * Created by Kaylynn on 2/7/2016.
@@ -38,26 +37,28 @@ public class IncomingSms extends BroadcastReceiver {
                     String message = currentMessage.getDisplayMessageBody();
 
 
-                    // Show Alert
-                    int duration = Toast.LENGTH_LONG;
-                    Toast toast = Toast.makeText(context,
-                            "senderNum: "+ senderNum + ", message: " + message, duration);
-                    toast.show();
 
 
                     MainActivity test = new MainActivity();
 
                     String messageToSend;
 
-                    if(test.driving) {
-                        messageToSend = "I am driving, ttyl!";
-                    }
-                    else {
-                        messageToSend = "Hello";
-                    }
-                    String number = senderNum;
+                    if(test.driving && test.responded == false) {
+                        String number = senderNum;
+                        messageToSend = "I'm driving, ttyl!";
 
-                    SmsManager.getDefault().sendTextMessage(number, null, messageToSend, null, null);
+
+                        //for testing purposes, so no one else gets random texts
+                        //comment this out so others can test
+                        //TODO: don't forget this is here
+
+//                        if (senderNum.equals("+16502450378")) {
+                            SmsManager.getDefault().sendTextMessage(number, null, messageToSend, null, null);
+//                        }
+
+                        test.responded = true;
+                    }
+
 
 
                 } // end for loop

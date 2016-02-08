@@ -16,9 +16,9 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="126dp"
         android:layout_height="wrap_content"
-        android:text="TTYL"
+        android:text="ttyl"
         android:textSize="80sp"
         android:layout_marginBottom="30dp"
         android:textColor="#d20d7d" />
@@ -27,7 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:id="@+id/button1"
-        android:text="@string/driving" />
+        android:text="@string/driving"
+        style="@style/RtlOverlay.Widget.AppCompat.DialogTitle.Icon" />
 
     <TextView
         android:layout_width="207dp"
